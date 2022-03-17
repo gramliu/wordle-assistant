@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { Grid } from '../src/Grid'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -16,8 +17,8 @@ const Home: NextPage = () => {
           <div className={styles.title}>Wordle Assistant</div>
         </nav>
 
-        <div className={styles.grid}>
-          
+        <div className={styles.gridContent}>
+          <Grid />
         </div>
       </main>
     </div>

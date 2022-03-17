@@ -1,0 +1,18 @@
+.cell {
+  color: $color-tone-1;
+  width: 100%;
+  border: 2px solid $color-tone-4;
+}
+
+.cell::before {
+  content: '';
+  padding-bottom: 100%;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  width: 40%;
+}
